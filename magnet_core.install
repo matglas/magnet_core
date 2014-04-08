@@ -1,0 +1,15 @@
+<?php
+
+/**
+ * Implements hook_schema().
+ */
+function magnet_core_schema() {
+  
+  $schema = array();
+
+  // Implement functionality activation schema.
+  // - feature
+  // - module
+  // - status
+
+}

@@ -1,0 +1,13 @@
+<?php
+
+function magnet_core_feature_enabled($feature) {
+  switch ($feature) {
+    case 'node_list_default':
+      return TRUE;
+      break;
+    
+    default:
+      return FALSE;
+      break;
+  }
+}

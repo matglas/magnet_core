@@ -1,0 +1,4 @@
+name = Magnet Core
+description = Manget Core functionality.
+package = Magnet
+core = 7.x
