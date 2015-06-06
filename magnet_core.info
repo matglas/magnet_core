@@ -2,3 +2,7 @@ name = Magnet Core
 description = Manget Core functionality.
 package = Magnet
 core = 7.x
+
+dependencies[] = redirect
+dependencies[] = globalredirect
+dependencies[] = transliteration

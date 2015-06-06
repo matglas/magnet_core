@@ -1,6 +1,20 @@
 <?php
 
+/**
+ * Request if a feature should be enabled in this setup.
+ *
+ * @param $feature
+ *
+ * @return bool
+ *
+ * @todo Added static cash for the hook results.
+ */
 function magnet_core_feature_enabled($feature) {
+  $feature_toggle_info = module_invoke_all('magnet_core_feature_enabled');
+  if (!empty($feature_toggle_info[$feature]) && is_bool($feature_toggle_info[$feature])) {
+    return $feature_toggle_info[$feature_toggle_info];
+  }
+
   switch ($feature) {
     case 'node_list_default':
       return TRUE;
